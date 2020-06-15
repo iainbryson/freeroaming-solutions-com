@@ -5,13 +5,21 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: `Freeroaming Solutions`,
+    description: `Contract and Freelance Software Development`,
+    author: `@iainbryson`,
   },
   plugins: [
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/
+        }
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -24,10 +32,34 @@ module.exports = {
         icon: `src/images/tailwind-icon.png`,
       },
     },
+
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: 'images'
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content`,
+        name: 'data'
+      }
+    },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
+          require('postcss-import')(), // Add support for sass-like '@import'
+          require('postcss-extend')(), // Add support for sass-like '@extend'
+          require('postcss-nesting')(), // Add support for sass-like nesting of rules
+          require(`postcss-preset-env`)({
+            stage: 3 // More info about stages: https://cssdb.org/#staging-process
+          }),
           require(`tailwindcss`)(tailwindConfig),
           require(`autoprefixer`),
           ...(process.env.NODE_ENV === `production`
@@ -36,6 +68,7 @@ module.exports = {
         ],
       },
     },
+
     `gatsby-plugin-offline`,
   ],
 };

@@ -1,0 +1,171 @@
+{
+  "projects":[
+    {
+      "name": "Keeper",
+      "id": "keeper",
+      "startDate":"2019-12-15T00:00:00Z",
+      "endDate": "2020-06-30T00:00:00Z",
+      "roles": ["CTO", "Full Stack Development", "DevOps"],
+      "technologies": [
+        "rails", "ruby", "AWS", "AWS CDK", "JavaScript", "Vue.js", "K8S", "Postgres"
+      ],
+      "description": [
+        "Keeper is a platform that provides deep searching of documents in your cloud storage."
+      ],
+      "assets": [
+        {
+          "title": "",
+          "description": "",
+          "asset": "productShot.png",
+          "hero": true
+        }
+      ]
+    },
+    {
+      "name": "Grafiti",
+      "id": "grafiti",
+      "startDate":"2018-06-01T00:00:00Z",
+      "endDate": "2019-12-15T00:00:00Z",
+      "roles": ["CTO", "Full Stack Development", "DevOps"],
+      "technologies": [
+        "rails", "ruby", "AWS", "AWS CDK", "JavaScript", "Vue.js", "Slack API", "Postgres"
+      ],
+      "description": [
+        "Grafiti finds the best charts and infographics from around the web and lets users search for the charts they want, create collections etc."
+      ],
+      "assets": [
+        {
+          "title": "",
+          "description": "",
+          "asset": "productShot.png",
+          "hero": true
+        }
+      ]
+    },
+    {
+      "name": "Grafiti Web App",
+      "id": "grafiti-webapp",
+      "startDate":"2018-06-01T00:00:00Z",
+      "endDate": "2019-12-15T00:00:00Z",
+      "roles": ["iOS Developer"],
+      "technologies": [
+        "Rails", "Ruby", "React"
+      ],
+      "description": [
+        ""
+      ],
+      "longDescription": [
+        ""
+      ],
+      "assets": [
+        {
+          "title": "",
+          "description": "",
+          "asset": "chartCreation.png",
+          "hero": true
+        }
+      ]
+    },
+    {
+      "name": "Grafiti iOS App",
+      "id": "grafiti-ios",
+      "startDate":"2018-06-01T00:00:00Z",
+      "endDate": "2019-12-15T00:00:00Z",
+      "roles": ["iOS Developer"],
+      "technologies": [
+        "Swift", "iOS"
+      ],
+      "description": [
+        ""
+      ],
+      "longDescription": [
+        ""
+      ],
+      "assets": [
+        {
+          "title": "",
+          "description": "",
+          "asset": "chartCreation.png",
+          "hero": true
+        }
+      ]
+    },
+    {
+      "name": "Listen to Denmark Research Portal",
+      "id": "ladk",
+      "startDate":"2019-07-01T00:00:00Z",
+      "endDate": "2020-07-30T00:00:00Z",
+      "roles": ["Full Stack Development", "DevOps"],
+      "technologies": [
+        "rails", "ruby", "JavaScript", "MongoDB", "Vue.js", "Nuxt.js", "Python.js"
+      ],
+      "description": [
+        "eNote is a custom e-learning platform built for Denmark Technical University (DTU) from scratch."
+      ],
+      "longDescription": [
+        ""
+      ],
+      "assets": [
+        {
+          "title": "",
+          "description": "",
+          "asset": "metadataQuery.png",
+          "hero": true
+        }
+      ]
+    },
+    {
+      "name": "eNote",
+      "id": "enote",
+      "startDate":"2016-03-01T00:00:00Z",
+      "endDate": "2019-06-30T00:00:00Z",
+      "roles": ["Full Stack Development", "DevOps"],
+      "technologies": [
+        "rails", "ruby", "JavaScript", "MongoDB", "MathJax"
+      ],
+      "description": [
+        "eNote is a custom e-learning platform built for Denmark Technical University (DTU) from scratch."
+      ],
+      "longDescription": [
+        "It includes:",
+        "",
+        "* A quiz builder and presenter",
+        "* A notes publishing platform (CMS) based on Markdown and MathJax",
+        "* A PDF publishing workflow based on ShareLatex and pdf.js",
+        ""
+      ],
+      "assets": [
+        {
+          "title": "",
+          "description": "",
+          "asset": "qandaNotes.png",
+          "hero": true
+        }
+      ]
+    },
+    {
+      "name": "Elicit",
+      "id": "elicit",
+      "startDate":"2016-03-01T00:00:00Z",
+      "endDate": "2019-06-30T00:00:00Z",
+      "roles": ["Full Stack Development", "DevOps"],
+      "technologies": [
+        "rails", "ruby", "JavaScript", "Postgres", "Vue.js"
+      ],
+      "description": [
+        ""
+      ],
+      "longDescription": [
+        ""
+      ],
+      "assets": [
+        {
+          "title": "",
+          "description": "",
+          "asset": "studySelection.png",
+          "hero": true
+        }
+      ]
+    }
+  ]
+}

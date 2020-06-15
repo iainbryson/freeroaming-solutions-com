@@ -1,0 +1,7 @@
+.long-description {
+    background-color:red;
+
+    & ul {
+    list-style: circle;
+    }
+}
