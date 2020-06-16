@@ -5,6 +5,7 @@ import Header from "./header";
 import {graphql, useStaticQuery} from "gatsby";
 
 import ContactButton from "./contactButton";
+import MeshBackground from "./meshBackground";
 
 function Layout({ children }) {
 
@@ -33,6 +34,7 @@ function Layout({ children }) {
       <Header />
 
       <main className="flex-1 w-full max-w-6xl px-4 py-8 mx-auto md:px-8 md:py-16">
+        <MeshBackground></MeshBackground>
         {children}
       </main>
 
