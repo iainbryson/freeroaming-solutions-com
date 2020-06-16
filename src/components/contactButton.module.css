@@ -1,0 +1,12 @@
+.contact-button {
+    background-color: azure;
+}
+
+.contact-button > svg{
+    display:inline;
+    margin: 0 0.5em;
+}
+
+.contract-button:last-child {
+    margin: 0 0.5em;
+}

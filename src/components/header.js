@@ -15,13 +15,13 @@ function Header() {
   `);
 
   return (
-    <header className="bg-brand">
+    <header className="fixed w-full z-30 text-brand bg-info-light">
       <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
         <Link to="/">
-          <h1 className="flex items-center text-white no-underline">
+          <h1 className="flex items-center text-brand no-underline">
             <Logo alt="Logo" className="w-8 h-8 mr-2 fill-current"
                  height="54"
-                 style={{fill: 'white'}}
+                 style={{fill: 'darkblue'}}
                  width="54"/>
             <span className="text-xl font-bold tracking-tight">
               {site.siteMetadata.title}
@@ -30,7 +30,7 @@ function Header() {
         </Link>
 
         <button
-          className="flex items-center block px-3 py-2 text-white border border-white rounded md:hidden"
+          className="flex items-center block px-3 py-2 text-red border border-red rounded md:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg
@@ -59,7 +59,7 @@ function Header() {
             },
           ].map((link) => (
             <Link
-              className="block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6"
+              className="block mt-4 text-brand no-underline md:inline-block md:mt-0 md:ml-6"
               key={link.title}
               to={link.route}
             >

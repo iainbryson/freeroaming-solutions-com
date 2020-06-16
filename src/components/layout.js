@@ -2,8 +2,33 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import Header from "./header";
+import {graphql, useStaticQuery} from "gatsby";
+
+import ContactButton from "./contactButton";
 
 function Layout({ children }) {
+
+  const {site} = useStaticQuery(graphql`
+    query ContactsQuery {
+  site {
+    siteMetadata {
+      contacts {
+        github
+        email
+        linkedin
+        stackoverflow
+      }
+    }
+  }
+}
+
+  `);
+
+  const contacts = Object.entries(site.siteMetadata.contacts).map(([medium, address]) => (
+    <ContactButton medium={medium} address={address} key={medium}></ContactButton>
+  ));
+
+  console.dir(contacts);
   return (
     <div className="flex flex-col min-h-screen font-sans text-gray-900">
       <Header />
@@ -12,29 +37,22 @@ function Layout({ children }) {
         {children}
       </main>
 
-      <footer className="bg-brand">
+      <footer className="bg-none">
         <nav className="flex justify-between max-w-6xl p-4 mx-auto text-sm md:p-8">
           <p className="text-white">
             Created by{` `}
             <a
               className="font-bold no-underline"
-              href="https://bryant.io"
+              href="https://freeroamingsolutions.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Taylor Bryant
+              Iain Bryson
             </a>
           </p>
 
           <p>
-            <a
-              className="font-bold text-white no-underline"
-              href="https://github.com/taylorbryant/gatsby-starter-tailwind"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
+            {contacts}
           </p>
         </nav>
       </footer>

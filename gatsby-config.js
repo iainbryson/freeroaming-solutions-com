@@ -8,6 +8,12 @@ module.exports = {
     title: `Freeroaming Solutions`,
     description: `Contract and Freelance Software Development`,
     author: `@iainbryson`,
+    contacts: {
+      email: 'iain@iain-bryson.ca',
+      github: 'http://github.com/iainbryson',
+      linkedin: 'https://www.linkedin.com/in/iainbryson',
+      stackoverflow: 'https://stackoverflow.com/users/5673187/iain-bryson',
+    }
   },
   plugins: [
     `gatsby-plugin-eslint`,

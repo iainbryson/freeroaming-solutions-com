@@ -64,18 +64,22 @@ function IndexPage() {
         title="Home"
       />
 
-      <section className="text-center">
-        <h2 className="inline-block p-3 mb-4 text-2xl font-bold">
-          Freeroaming Solutions
-        </h2>
-        <h3 className="block p-3 mb-4 text-xl font-bold">
-          Contract & Freelance Software Development
-        </h3>
+      <article className="text-center flex h-screen  content-center justify-center flex-col">
+        <section className="mx-auto h-auto">
+          <h1 className="inline-block p-3 mb-4 text-4xl font-bold">
+            Freeroaming Solutions
+          </h1>
+          <h3 className="block p-3 mb-4 text-xl font-bold">
+            Contract & Freelance Software Development
+          </h3>
+        </section>
+      </article>
 
+      <article>
         <ul className="container mx-auto flex flex-wrap mb-4 p-3 w-full">
           {projectComponents}
         </ul>
-    </section>
+      </article>
     </Layout>
   );
 }
