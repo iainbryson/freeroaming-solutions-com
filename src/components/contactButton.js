@@ -13,11 +13,8 @@ const MEDIUM_TO_ICON = {
 function ContactButton(props) {
   const { medium, address } = props;
 
-//  const icon = React.createElement(MEDIUM_TO_ICON[medium]);
   const icon = MEDIUM_TO_ICON[medium];
 
-  console.dir(medium);
-  console.dir(icon);
   const card =
     <a className={`rounded overflow-hidden shadow-lg m-4 inline-block p-1 ${style.contactButton}`}
     href={address}>

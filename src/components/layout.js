@@ -28,7 +28,6 @@ function Layout({ children }) {
     <ContactButton medium={medium} address={address} key={medium}></ContactButton>
   ));
 
-  console.dir(contacts);
   return (
     <div className="flex flex-col min-h-screen font-sans text-gray-900">
       <Header />
