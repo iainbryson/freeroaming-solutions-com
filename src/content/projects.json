@@ -12,10 +12,26 @@
       "description": [
         "Keeper is a platform that provides deep searching of documents in your cloud storage."
       ],
+      "longDescription": [
+        "Keeper is a Rails API with Vue.js frontend that lets users search their documents and document elements",
+        "(e.g. embedded charts) visually. Each document from a cloud storage provider (Google & Slack integrations",
+        "were completed) is processed by creating images for each page and indexing the text and the images (OCR).",
+        "",
+        "The user can then search through all their documents' pages through a tiled page experience, finding the ",
+        "right pages and documents at a glance.  The findings can then be added to collections for export or sharing",
+        "",
+        "The combination of deep indexing and visual UX allows users to scan through lots of results quickly,",
+        "finding the right slide/page from visual memory and remixing the results into new content quickly."
+      ],
+      "contributions": [
+        "As CTO, I let a small team of developments (1-2 at any given time), scoped out the architecture and wrote",
+        "the majority of the code across the infrastructure (provisioned using AWS CDK), devops (CI/CD), serverless",
+        "micro-services (AWS lambda functions), Rails backend and job server and Vue.js frontend."
+      ],
       "assets": [
         {
-          "title": "",
-          "description": "",
+          "title": "Keeper",
+          "description": "The keeper main main page",
           "asset": "productShot.png",
           "hero": true
         }
@@ -33,6 +49,23 @@
       "description": [
         "Grafiti finds the best charts and infographics from around the web and lets users search for the charts they want, create collections etc."
       ],
+      "longDescription": [
+        "Grafiti is a search engine for charts and infographics.",
+        "It is structured as a series of micro-services which scape a long list of websites for new charts, deduping",
+        "them and added as much metadata from the surrounding context (article text, website keywords, etc.).",
+        "",
+        "These records are then added to a Postgres DB, with the chart images themselves in AWS S3.  A Rails",
+        "app them serves searches for users, allowing them to quickly find the charts they want.",
+        "Additionally, we designed a small algorithm to power a browse experience where usage signals from the users",
+        "would boost the prominence of individual charts.",
+        "",
+        "At it's peak, Grafiti was serving 100k users a month."
+      ],
+      "contributions": [
+        "As CTO, I let a small team of developments (1-3 at any given time), led the architecture and wrote",
+        "the code across the infrastructure (provisioned using AWS CloudFOrmation), devops (CI/CD), serverless",
+        "micro-services (AWS lambda functions), Rails backend and job server and Vanilla JS frontend."
+      ],
       "assets": [
         {
           "title": "",
@@ -49,13 +82,21 @@
       "endDate": "2019-12-15T00:00:00Z",
       "roles": ["iOS Developer"],
       "technologies": [
-        "Rails", "Ruby", "React"
+        "Rails", "Ruby", "React.js", "D3.js", "Next.js"
       ],
       "description": [
-        ""
+        "Grafiti Chart Maker was an app designed to make it easy to create charts on a mobile device."
       ],
       "longDescription": [
-        ""
+        "Grafiti Chart Maker was a React.js SPA which communicated with a Rails API backend for services such as",
+        "AuthN/AuthZ, storing the data series and the published charts." ,
+        "",
+        "The charts were rendered using D3.js.",
+        "",
+        "The project ultimately ended in a pivot to Grafiti Search"
+      ],
+      "contributions": [
+        "As Lead Developer, I oversaw the frontend design and architecture."
       ],
       "assets": [
         {
@@ -69,17 +110,23 @@
     {
       "name": "Grafiti iOS App",
       "id": "grafiti-ios",
-      "startDate":"2018-06-01T00:00:00Z",
-      "endDate": "2019-12-15T00:00:00Z",
+      "startDate":"2016-01-01T00:00:00Z",
+      "endDate": "2018-03-01T00:00:00Z",
       "roles": ["iOS Developer"],
       "technologies": [
         "Swift", "iOS"
       ],
       "description": [
-        ""
+        "Grafiti Chart Maker was an app designed to make it easy to create charts on a mobile device."
       ],
       "longDescription": [
-        ""
+        "Grafiti Chart Maker was the first articulation of Grafiti's \"Instagram for Data\" concept.",
+        "It was an iOS native app written in Swift, which communicated with a Rails API backend for services such as",
+        "AuthN/AuthZ, storing the data series and the published charts."
+      ],
+      "contributions": [
+        "As Lead Developer, I worked with a second iOS developer to build the App.",
+        "We were approved by the Apple app store and released to the public."
       ],
       "assets": [
         {
@@ -97,13 +144,27 @@
       "endDate": "2020-07-30T00:00:00Z",
       "roles": ["Full Stack Development", "DevOps"],
       "technologies": [
-        "rails", "ruby", "JavaScript", "MongoDB", "Vue.js", "Nuxt.js", "Python.js"
+        "rails", "ruby", "JavaScript", "MariaDB", "Vue.js", "Nuxt.js", "Python", "D3.js"
       ],
       "description": [
-        "eNote is a custom e-learning platform built for Denmark Technical University (DTU) from scratch."
+        "Listen is a project in Denmark to gather the sounds of the nation. My contribution is a website for researchers",
+        "to analyze and download the data (both metadata and raw sound files)."
       ],
       "longDescription": [
-        ""
+        "\"(Listen to Denmark)[https://lyden-af.dk/hvordan-lyder-danmark]\" is a project to gather the sounds of Denmark.",
+        "I was hired to build a website to let researchers extract the metadata from this website, including such things",
+        " as the sounds themselves, the location, any associated images, browser/app data etc.",
+        "",
+        "Researches can access the data via a REST API (including Python bindings and associated examples and documentation), ",
+        "or via an SPA webapp which provides a visual query builder, download options, heatmaps and other geographic ",
+        "visualization and user management.",
+        "",
+        "Underlying all this was the data extraction system, which replicated and denormalized the data from the ",
+        "public-facing Listen website (implemented using Drupal)."
+      ],
+      "contributions": [
+        "As Sole Developer, I worked with Project Owner to gather requirements, created the architectural and UX design, ",
+        "and finally implemented the site."
       ],
       "assets": [
         {
@@ -127,12 +188,20 @@
         "eNote is a custom e-learning platform built for Denmark Technical University (DTU) from scratch."
       ],
       "longDescription": [
-        "It includes:",
+        "The eNote platform includes:",
+        "",
         "",
         "* A quiz builder and presenter",
         "* A notes publishing platform (CMS) based on Markdown and MathJax",
         "* A PDF publishing workflow based on ShareLatex and pdf.js",
-        ""
+        "",
+        "All these together enable professors to write their course notes, including enabling mathematical expressions ",
+        "using the _lingua franca_ in higher education of LaTeX, and embedded mini-quizzes and create quizzes to test the students ",
+        "(including basic provisions against cheating)."
+      ],
+      "contributions": [
+        "As Sole Developer, I worked with Project Owner to gather requirements, created the architectural and UX design, ",
+        "and finally implemented the site(s) along with the necessary CI/CD infrastructure (via GitLab)."
       ],
       "assets": [
         {
@@ -150,13 +219,28 @@
       "endDate": "2019-06-30T00:00:00Z",
       "roles": ["Full Stack Development", "DevOps"],
       "technologies": [
-        "rails", "ruby", "JavaScript", "Postgres", "Vue.js"
+        "rails", "ruby", "JavaScript", "Postgres", "React", "Typescript", "OpenAPI"
       ],
       "description": [
-        ""
+        "Elicit is a join project between DTU in Denmark and NYU in New York City to provide a platform for psychological experiments"
       ],
       "longDescription": [
-        ""
+        "The elicit project has two main components:",
+        "",
+        "1. The backend (Rails), which stores studies and their results.",
+        "2. An experiment frontend for testing sujects.  For the first release, this was a series of experiments about ",
+        "eLearning and used (WebGazer)[https://github.com/brownhci/WebGazer] to track eye movements and hence attention.",
+        "",
+        "The project involved replacing an existing backend system which was inefficient (for instance, it had no querying ",
+        "ability, and forced the download of every user's results along with the questions embedded in the same XML ",
+        "document.  The redesign re-analyzed the domain, creating a domain model of the Studies (questions) and Experiements ",
+        "(results) and then implemented it along with a REST query API, including OpenAPI bindings.",
+        "",
+        "To work with this new backend, the frontend code was altered and extended to include video stimuli and eye tracking."
+      ],
+      "contributions": [
+        "As Sole Developer, I worked with Project Owner to gather requirements, created the architectural and UX design, ",
+        "and finally implemented the site."
       ],
       "assets": [
         {

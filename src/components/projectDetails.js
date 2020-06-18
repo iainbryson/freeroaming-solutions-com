@@ -35,7 +35,6 @@ function ProjectDetails(props) {
     .use(remarkHtml)
     .processSync(project.longDescription.join('\n') || "");//.toString();
 
-  console.dir(style);
   const longDescription = <p className={style.longDescription}
                              dangerouslySetInnerHTML={{ __html: longDescriptionText}}></p>;
 
@@ -58,7 +57,7 @@ function ProjectDetails(props) {
 
       <div className="modal-content py-4 text-left px-6">
         <div className="flex justify-between items-center pb-3">
-          <p className="text-2xl font-bold">{ project.description }</p>
+          <p className="text-2xl font-titles text-brand-dark text-center">{ project.name }</p>
           <div className="modal-close cursor-pointer z-50"  onClick={close}>
             <svg className="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                  viewBox="0 0 18 18">
@@ -68,12 +67,10 @@ function ProjectDetails(props) {
           </div>
         </div>
 
-        <p>Modal content can go here</p>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
+        <p className="text-l font-brand-dark">{ project.description }</p>
+
         { longDescription}
+
         <div className="px-6 py-4">
           {technologyTags}
         </div>

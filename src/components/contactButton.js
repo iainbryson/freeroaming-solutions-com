@@ -19,7 +19,7 @@ function ContactButton(props) {
     <a className={`rounded overflow-hidden shadow-lg m-4 inline-block p-1 ${style.contactButton}`}
     href={address}>
       {icon({color: 'red', fill: 'purple'})}
-      <span>{medium}</span>
+      <span className=" text-brand-dark">{medium}</span>
     </a>;
 
   return card;

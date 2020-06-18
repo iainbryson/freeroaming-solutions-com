@@ -74,7 +74,16 @@ module.exports = {
         ],
       },
     },
-
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+//          families: ['Palatino Sans Arabic']
+          families: ['Cormorant Infant']
+        }
+      }
+    },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-nullish-coalescing-operator`,
   ],
 };

@@ -23,7 +23,7 @@ function Header() {
                  height="54"
                  style={{fill: 'darkblue'}}
                  width="54"/>
-            <span className="text-xl font-bold tracking-tight">
+            <span className="text-xl font-bold tracking-tight hidden">
               {site.siteMetadata.title}
             </span>
           </h1>

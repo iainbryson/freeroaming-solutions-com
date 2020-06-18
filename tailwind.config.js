@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+//        titles: 'Palatino Sans Arabic',
+        titles: 'Cormorant Infant'
+      },
       colors: {
         // https://adevade.github.io/color-scheme-generator/
         'white': '#ffffff',
@@ -43,7 +47,10 @@ module.exports = {
       }
     }
   },
-  variants: {},
+  variants: {
+     scale: ['responsive', 'hover', 'focus'],
+  },
+
   // https://github.com/tailwindcss/custom-forms
   plugins: [require("@tailwindcss/custom-forms")],
 };

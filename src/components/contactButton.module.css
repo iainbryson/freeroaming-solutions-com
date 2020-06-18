@@ -1,12 +1,13 @@
 .contact-button {
     background-color: azure;
+    line-height:1.3em;
 }
 
 .contact-button > svg{
-    display:inline;
-    margin: 0 0.5em;
+    display: inline;
+    margin: 0 0.5em 3px 0.5em;
 }
 
-.contract-button:last-child {
-    margin: 0 0.5em;
+.contact-button> *:last-child {
+    margin: 0 0.5em 0 0.1em;
 }
