@@ -4,7 +4,7 @@ import remark from "remark";
 import recommended from "remark-preset-lint-recommended";
 import remarkHtml from "remark-html";
 import style from "./projectDetails.module.css";
-import { TechnologyTag } from "./helpers";
+import { TechnologyTag } from "../helpers";
 
 // import { useStaticQuery, graphql } from "gatsby";
 // import SharpImage from "./sharpImage";

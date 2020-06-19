@@ -9,7 +9,7 @@ import AboutArticle from "../components/about/aboutArticle";
 
 import ContactArticle from "../components/contact/contactArticle";
 
-const MenuTrayLazy = React.lazy(() => import("../components/menuTray"));
+const MenuTrayLazy = React.lazy(() => import("../components/menu/menuTray"));
 
 function IndexPage() {
   const isSSR = typeof window === "undefined";

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import SharpImage from "./sharpImage";
-import { TechnologyTag } from "./helpers";
+import SharpImage from "../sharpImage";
+import { TechnologyTag } from "../helpers";
 
 function Project(props) {
   const { project, key } = props;

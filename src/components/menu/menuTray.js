@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import style from "./menuTray.module.css";
-import DisclosureButton from "../components/disclosureButton";
+import DisclosureButton from "./disclosureButton";
 
 function MenuTray(props) {
   const { menuItems } = props;

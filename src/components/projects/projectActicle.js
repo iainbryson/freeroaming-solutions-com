@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import ProjectDetails from "../projectDetails";
+import ProjectDetails from "./projectDetails";
 import { graphql, useStaticQuery } from "gatsby";
-import Project from "../project";
+import Project from "./project";
 import * as PropTypes from "prop-types";
 
 // Alternative to using GraphQL

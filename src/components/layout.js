@@ -30,7 +30,7 @@ function Layout({ children }) {
   // const contacts = Object.entries(siteMetadata.contacts).map(([medium, address]) => (
   //   <ContactButton medium={medium} address={address} key={medium}></ContactButton>
   // ));
-  const contacts = "";
+  //const contacts = "";
 
   return (
     <div
@@ -41,21 +41,20 @@ function Layout({ children }) {
       </main>
 
       <footer className="bg-none">
-        <nav className="flex justify-between items-center max-w-6xl p-1 md:px-2 lg:px-4 mx-auto text-sm md:p-8">
-          <p className="text-white  text-brand-dark">
-            Created by {` `}
+        <nav className="flex justify-around items-center max-w-6xl p-1 md:px-2 lg:px-4 mx-auto text-sm md:p-8">
+          <p className="text-white text-brand-dark">
+            <span>Created by </span>
             <a
               className="font-bold no-underline"
               href={siteMetadata.url}
               target="_blank"
               rel="noopener noreferrer"
             >
-              {siteMetadata.author}
+              { siteMetadata.author }
             </a>
             &nbsp; &copy; {new Date().getYear() + 1900}
           </p>
 
-          <p>{contacts}</p>
         </nav>
       </footer>
     </div>
