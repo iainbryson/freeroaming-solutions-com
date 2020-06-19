@@ -1,23 +1,32 @@
 {
-  "projects":[
+  "projects": [
     {
       "name": "Keeper",
       "id": "keeper",
-      "startDate":"2019-12-15T00:00:00Z",
+      "startDate": "2019-12-15T00:00:00Z",
       "endDate": "2020-06-30T00:00:00Z",
       "roles": ["CTO", "Full Stack Development", "DevOps"],
       "technologies": [
-        "rails", "ruby", "AWS", "AWS CDK", "JavaScript", "Vue.js", "K8S", "Postgres"
+        "rails",
+        "ruby",
+        "AWS",
+        "AWS CDK",
+        "JavaScript",
+        "Vue.js",
+        "K8S",
+        "Postgres"
       ],
       "description": [
         "Keeper is a platform that provides deep searching of documents in your cloud storage."
       ],
       "longDescription": [
-        "Keeper is a Rails API with Vue.js frontend that lets users search their documents and document elements",
+        "Keeper is implemented as a Rails API with Vue.js frontend that lets users search their documents and document elements",
         "(e.g. embedded charts) visually. Each document from a cloud storage provider (Google & Slack integrations",
         "were completed) is processed by creating images for each page and indexing the text and the images (OCR).",
         "",
-        "The user can then search through all their documents' pages through a tiled page experience, finding the ",
+        "",
+        "",
+        "Users can then search through all their (and their organization's) documents' pages through a tiled page experience, finding the ",
         "right pages and documents at a glance.  The findings can then be added to collections for export or sharing",
         "",
         "The combination of deep indexing and visual UX allows users to scan through lots of results quickly,",
@@ -38,13 +47,20 @@
       ]
     },
     {
-      "name": "Grafiti",
+      "name": "Grafiti Search",
       "id": "grafiti",
-      "startDate":"2018-06-01T00:00:00Z",
+      "startDate": "2018-06-01T00:00:00Z",
       "endDate": "2019-12-15T00:00:00Z",
       "roles": ["CTO", "Full Stack Development", "DevOps"],
       "technologies": [
-        "rails", "ruby", "AWS", "AWS CDK", "JavaScript", "Vue.js", "Slack API", "Postgres"
+        "rails",
+        "ruby",
+        "AWS",
+        "AWS CDK",
+        "JavaScript",
+        "Vue.js",
+        "Slack API",
+        "Postgres"
       ],
       "description": [
         "Grafiti finds the best charts and infographics from around the web and lets users search for the charts they want, create collections etc."
@@ -76,24 +92,22 @@
       ]
     },
     {
-      "name": "Grafiti Web App",
+      "name": "Grafiti Chart Maker Web App",
       "id": "grafiti-webapp",
-      "startDate":"2018-06-01T00:00:00Z",
+      "startDate": "2018-06-01T00:00:00Z",
       "endDate": "2019-12-15T00:00:00Z",
       "roles": ["iOS Developer"],
-      "technologies": [
-        "Rails", "Ruby", "React.js", "D3.js", "Next.js"
-      ],
+      "technologies": ["Rails", "Ruby", "React.js", "D3.js", "Next.js"],
       "description": [
         "Grafiti Chart Maker was an app designed to make it easy to create charts on a mobile device."
       ],
       "longDescription": [
         "Grafiti Chart Maker was a React.js SPA which communicated with a Rails API backend for services such as",
-        "AuthN/AuthZ, storing the data series and the published charts." ,
+        "AuthN/AuthZ, storing the data series and the published charts.",
         "",
         "The charts were rendered using D3.js.",
         "",
-        "The project ultimately ended in a pivot to Grafiti Search"
+        "The project ultimately ended in a pivot to Grafiti Search."
       ],
       "contributions": [
         "As Lead Developer, I oversaw the frontend design and architecture."
@@ -108,14 +122,12 @@
       ]
     },
     {
-      "name": "Grafiti iOS App",
+      "name": "Grafiti Chart Maker iOS App",
       "id": "grafiti-ios",
-      "startDate":"2016-01-01T00:00:00Z",
+      "startDate": "2016-01-01T00:00:00Z",
       "endDate": "2018-03-01T00:00:00Z",
       "roles": ["iOS Developer"],
-      "technologies": [
-        "Swift", "iOS"
-      ],
+      "technologies": ["Swift", "iOS"],
       "description": [
         "Grafiti Chart Maker was an app designed to make it easy to create charts on a mobile device."
       ],
@@ -140,11 +152,18 @@
     {
       "name": "Listen to Denmark Research Portal",
       "id": "ladk",
-      "startDate":"2019-07-01T00:00:00Z",
+      "startDate": "2019-07-01T00:00:00Z",
       "endDate": "2020-07-30T00:00:00Z",
       "roles": ["Full Stack Development", "DevOps"],
       "technologies": [
-        "rails", "ruby", "JavaScript", "MariaDB", "Vue.js", "Nuxt.js", "Python", "D3.js"
+        "rails",
+        "ruby",
+        "JavaScript",
+        "MariaDB",
+        "Vue.js",
+        "Nuxt.js",
+        "Python",
+        "D3.js"
       ],
       "description": [
         "Listen is a project in Denmark to gather the sounds of the nation. My contribution is a website for researchers",
@@ -178,12 +197,10 @@
     {
       "name": "eNote",
       "id": "enote",
-      "startDate":"2016-03-01T00:00:00Z",
+      "startDate": "2016-03-01T00:00:00Z",
       "endDate": "2019-06-30T00:00:00Z",
       "roles": ["Full Stack Development", "DevOps"],
-      "technologies": [
-        "rails", "ruby", "JavaScript", "MongoDB", "MathJax"
-      ],
+      "technologies": ["rails", "ruby", "JavaScript", "MongoDB", "MathJax"],
       "description": [
         "eNote is a custom e-learning platform built for Denmark Technical University (DTU) from scratch."
       ],
@@ -215,11 +232,17 @@
     {
       "name": "Elicit",
       "id": "elicit",
-      "startDate":"2016-03-01T00:00:00Z",
+      "startDate": "2016-03-01T00:00:00Z",
       "endDate": "2019-06-30T00:00:00Z",
       "roles": ["Full Stack Development", "DevOps"],
       "technologies": [
-        "rails", "ruby", "JavaScript", "Postgres", "React", "Typescript", "OpenAPI"
+        "rails",
+        "ruby",
+        "JavaScript",
+        "Postgres",
+        "React",
+        "Typescript",
+        "OpenAPI"
       ],
       "description": [
         "Elicit is a join project between DTU in Denmark and NYU in New York City to provide a platform for psychological experiments"

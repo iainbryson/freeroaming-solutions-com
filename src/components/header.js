@@ -19,10 +19,13 @@ function Header() {
       <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
         <Link to="/">
           <h1 className="flex items-center text-brand no-underline">
-            <Logo alt="Logo" className="w-8 h-8 mr-2 fill-current"
-                 height="54"
-                 style={{fill: 'darkblue'}}
-                 width="54"/>
+            <Logo
+              alt="Logo"
+              className="w-8 h-8 mr-2 fill-current"
+              height="54"
+              style={{ fill: "darkblue" }}
+              width="54"
+            />
             <span className="text-xl font-bold tracking-tight hidden">
               {site.siteMetadata.title}
             </span>

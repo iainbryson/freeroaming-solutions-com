@@ -1,78 +1,75 @@
 :root {
-    --drop-height: -2vh;
-    --disclosure-width: 50%;
+  --drop-height: -2vh;
+  --disclosure-width: 50%;
 }
 
-/*
- var(--disclosure-width)
- */
-
 @keyframes bounceIn {
-    0% {
-        transform:  translate(calc(50vw - var(--disclosure-width)), var(--drop-height)) scale(0.2);
-        opacity: 0;
-    }
-    30% {
-        opacity: 0.9;
-    }
-    60% {
-        transform: translate(calc(50vw - var(--disclosure-width)), 0) scale(1.0) ;
-        opacity: 1;
-    }
-    70% {
-        transform: translate(calc(50vw - var(--disclosure-width)), 0) scale(0.9) ;
-        opacity: 1;
-    }
-    80% {
-        transform: translate(calc(50vw - var(--disclosure-width)), 0) scale(1.1) ;
-        opacity: 1;
-    }
-    100% {
-        transform: translate(calc(50vw - var(--disclosure-width)), 0) scale(1) ;
-    }
+  0% {
+    transform: translateY(var(--drop-height))
+      scale(0.2);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  60% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(0) scale(0.9);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(0) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }
 
 .disclosure-button {
-    display: inline-block;
-    background-color: azure;
-    line-height: 1.3em;
-    transition: all 0.5s ease-in-out;
-}
-
-.entrance {
+  display: inline-block;
+  background-color: azure;
+  line-height: 1.3em;
+  transition: all 0.5s ease-in-out;
 }
 
 .entrancex {
-    animation-duration: 1.0s;
-    animation-delay: 0.2s;
-    animation-name: bounceIn;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: both;
+}
+
+.entrance {
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-name: bounceIn;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }
 
 .disclosure-button > svg {
-    display: inline;
-    margin: 0 0.5em 3px 0.5em;
-    will-change: transform;
-    transition: all 0.5s ease-in-out;
+  display: inline;
+  margin: 0 0.5em 3px 0.5em;
+  will-change: transform;
+  transition: all 0.5s ease-in-out;
 }
 
 .disclosure-button.withinx > svg {
-    display: none;
+  display: none;
 }
 
 .disclosure-button > *:last-child {
-    margin: 0 0.5em 0 0.1em;
+  margin: 0 0.5em 0 0.1em;
 }
 
 @media screen and (min-width: 641px) {
-    .disclosure-button.above.stowed > svg {
-        transform: rotate(-90deg);
-    }
-    .disclosure-button.within.stowed > svg {
-        transform: rotate(0deg);
-    }
-    .disclosure-button.below.stowed > svg {
-        transform: rotate(90deg);
-    }
+  .disclosure-button.above.stowed > svg {
+    transform: rotate(-90deg);
+  }
+  .disclosure-button.within.stowed > svg {
+    transform: rotate(0deg);
+  }
+  .disclosure-button.below.stowed > svg {
+    transform: rotate(90deg);
+  }
 }

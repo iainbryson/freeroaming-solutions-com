@@ -1,7 +1,12 @@
 .long-description {
-    background-color:red;
+  margin-top: 1em;
+  font-size: 90%;
 }
 
 .long-description > ul {
   list-style: circle;
+}
+
+.long-description > p {
+  margin-top: 0.5em;
 }

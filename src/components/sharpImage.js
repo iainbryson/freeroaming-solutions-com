@@ -1,12 +1,12 @@
-import React, { useMemo } from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
+import React, { useMemo } from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
 import PropTypes from "prop-types";
 
 const SharpImage = ({ src, ...props }) => {
   const data = useStaticQuery(graphql`
     query {
-      allFile( filter: { internal: { mediaType: { regex: "images/" } } } ) {
+      allFile(filter: { internal: { mediaType: { regex: "images/" } } }) {
         edges {
           node {
             relativePath
@@ -19,22 +19,18 @@ const SharpImage = ({ src, ...props }) => {
         }
       }
     }
-  `)
+  `);
 
-  const match = useMemo(() => (
-    data.allFile.edges.find(({ node }) => src === node.relativePath)
-  ), [ data, src ])
+  const match = useMemo(
+    () => data.allFile.edges.find(({ node }) => src === node.relativePath),
+    [data, src]
+  );
 
-  return (
-    <Img
-      fluid={match.node.childImageSharp.fluid}
-      {...props}
-    />
-  )
-}
+  return <Img fluid={match.node.childImageSharp.fluid} {...props} />;
+};
 
 SharpImage.propTypes = {
   src: PropTypes.string.isRequired,
 };
 
-export default SharpImage
+export default SharpImage;

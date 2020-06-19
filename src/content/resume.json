@@ -1,243 +1,243 @@
 {
-    "basics": {
-        "name": "Iain Bryson",
-        "label": "Software Developer",
-        "summary": "Making software across boundaries of language, technology and geography.",
-        "location": {
-            "postalCode": "98107",
-            "countryCode": "US"
-        },
-        "phone": "+1 (425) 835-3549",
-        "website": "http:\/\/freeroamingsolutions.com",
-        "profiles": [
-            {
-                "network": "linkedin",
-                "username": "iainbryson",
-                "url": "https:\/\/www.linkedin.com\/in\/iainbryson"
-            },
-            {
-                "network": "twitter",
-                "username": "iainbryson",
-                "url": "https:\/\/twitter.com\/iainbryson"
-            }
-        ]
+  "basics": {
+    "name": "Iain Bryson",
+    "label": "Software Developer",
+    "summary": "Making software across boundaries of language, technology and geography.",
+    "location": {
+      "postalCode": "98107",
+      "countryCode": "US"
     },
-    "work": [
-        {
-            "company": "Grafiti, Inc.",
-            "summary": "Building the world's first search engine for graphs & charts from trusted publishers & data sources. We're building a facts machine to serve charts, graphs & visual insights into your favorite tools.",
-            "position": "CTO",
-            "startDate": "2016-06-01"
-        },
-        {
-            "company": "Freeroaming Solutions",
-            "summary": "Freelance",
-            "position": "Peripatetic Software Developer",
-            "startDate": "2015-12-01"
-        },
-        {
-            "company": "Earth",
-            "summary": "Currently on a gap year, traveling and reinventing myself as a digital nomad.",
-            "position": "International Vagabond",
-            "startDate": "2014-11-01"
-        },
-        {
-            "company": "Microsoft",
-            "summary": "Founding member of the Reach, Engagement & Delight team for OneDrive.  This unique team is tasked with data analytics for all major business decisions with a focus on driving engagement & reliability for all of OneDrive \n\nScope ranged from implementing telemetry in all areas of the product chain, from backend services through to clients on all platforms, writing analysis scripts, developing statistical models, creating visualizations & presentations for audiences ranging from senior management to the entire team of ~300 engineers.",
-            "position": "Principal Quality Engineer",
-            "startDate": "2014-04-01",
-            "endDate": "2014-09-01"
-        },
-        {
-            "company": "Microsoft",
-            "summary": "Principal test engineer working on file sync engine, product telemetry & visualization in the Devices and Roaming Experience team.",
-            "position": "Principal SDET",
-            "startDate": "2011-09-01",
-            "endDate": "2014-04-01"
-        },
-        {
-            "company": "Microsoft",
-            "summary": "Test lead on the Client Sync Engine team in the Windows Live Mesh team.  Led a team responsible for testing the file sync engine, validating performance, stress, and functional correctness for the client components of the distributed client service and peer to peer file synchronization engine.  Shipped as part of Windows Live Essentials in 2010.",
-            "position": "Senior Test Lead",
-            "startDate": "2008-12-01",
-            "endDate": "2011-09-01"
-        },
-        {
-            "company": "Microsoft",
-            "summary": "Test Manager for the ISV&NT product team, makers of Visual C++.  Was the Test Manager for the initial phases of Visual C++ 2010.",
-            "position": "Test Manager",
-            "startDate": "2007-12-01",
-            "endDate": "2008-12-01"
-        },
-        {
-            "company": "Microsoft",
-            "summary": "Test Manager for the Phoenix product unit.  Our product unit delivers the optimizing backends for the Visual C++ compiler, along with associated tools.  In addition, we deliver the Phoenix program analysis and transformation platform.",
-            "position": "Test Manager",
-            "startDate": "2004-10-01",
-            "endDate": "2007-12-01"
-        },
-        {
-            "company": "Microsoft",
-            "summary": "Test lead for the x64 (a.k.a. AMD64) code generator and tools during the initial port of the Windows and .NET platforms.  Worked closely with internal partners (particularly Windows) as well as external ones (particularly AMD).",
-            "position": "Test Lead",
-            "startDate": "2001-05-01",
-            "endDate": "2004-10-01"
-        },
-        {
-            "company": "Microsoft",
-            "summary": "SDE\/T on the C runtime library, focusing on the IA64 platform.",
-            "position": "Software Design Engineer in Test",
-            "startDate": "2000-02-01",
-            "endDate": "2001-05-01"
-        }
-    ],
-    "education": [
-        {
-            "institution": "University of Western Ontario",
-            "area": "Robotics, Software",
-            "studyType": "M. Eng. Sci.",
-            "startDate": "1998-01-01",
-            "endDate": "2000-01-01"
-        },
-        {
-            "institution": "Concordia University",
-            "area": "Computer Engineering",
-            "studyType": "Bachelor",
-            "startDate": "1994-01-01",
-            "endDate": "1997-01-01"
-        }
-    ],
-    "skills": [
-        {
-            "name": "Software Design"
-        },
-        {
-            "name": ".NET"
-        },
-        {
-            "name": "Testing"
-        },
-        {
-            "name": "Test Automation"
-        },
-        {
-            "name": "Distributed Systems"
-        },
-        {
-            "name": "Software Engineering"
-        },
-        {
-            "name": "C++"
-        },
-        {
-            "name": "Visual Studio"
-        },
-        {
-            "name": "C"
-        },
-        {
-            "name": "WinDbg"
-        },
-        {
-            "name": "Software Development"
-        },
-        {
-            "name": "Windows"
-        },
-        {
-            "name": "C#"
-        },
-        {
-            "name": "Silverlight"
-        },
-        {
-            "name": "Software Quality Assurance"
-        },
-        {
-            "name": "TFS"
-        },
-        {
-            "name": "Scrum"
-        },
-        {
-            "name": "Perl"
-        },
-        {
-            "name": "JavaScript"
-        },
-        {
-            "name": "Ubuntu"
-        },
-        {
-            "name": "Performance Testing"
-        },
-        {
-            "name": "Test Planning"
-        },
-        {
-            "name": "Test Design"
-        },
-        {
-            "name": "Test Strategy"
-        },
-        {
-            "name": "Test Management"
-        },
-        {
-            "name": "HTML 5"
-        },
-        {
-            "name": "Powershell"
-        },
-        {
-            "name": "Python"
-        },
-        {
-            "name": "Management"
-        },
-        {
-            "name": "Agile Methodologies"
-        },
-        {
-            "name": "Windows Azure"
-        },
-        {
-            "name": "Win32 API"
-        },
-        {
-            "name": "People Management"
-        },
-        {
-            "name": "Mac OS X"
-        },
-        {
-            "name": "Linux"
-        },
-        {
-            "name": "OS X"
-        },
-        {
-            "name": "CSS"
-        },
-        {
-            "name": "D3.js"
-        },
-        {
-            "name": "jQuery"
-        },
-        {
-            "name": "Ruby"
-        },
-        {
-            "name": "WordPress"
-        },
-        {
-            "name": "Node.js"
-        }
-    ],
-    "languages": [
-        {
-            "language": "French"
-        }
+    "phone": "+1 (425) 835-3549",
+    "website": "http://freeroamingsolutions.com",
+    "profiles": [
+      {
+        "network": "linkedin",
+        "username": "iainbryson",
+        "url": "https://www.linkedin.com/in/iainbryson"
+      },
+      {
+        "network": "twitter",
+        "username": "iainbryson",
+        "url": "https://twitter.com/iainbryson"
+      }
     ]
+  },
+  "work": [
+    {
+      "company": "Grafiti, Inc.",
+      "summary": "Building the world's first search engine for graphs & charts from trusted publishers & data sources. We're building a facts machine to serve charts, graphs & visual insights into your favorite tools.",
+      "position": "CTO",
+      "startDate": "2016-06-01"
+    },
+    {
+      "company": "Freeroaming Solutions",
+      "summary": "Freelance",
+      "position": "Peripatetic Software Developer",
+      "startDate": "2015-12-01"
+    },
+    {
+      "company": "Earth",
+      "summary": "Currently on a gap year, traveling and reinventing myself as a digital nomad.",
+      "position": "International Vagabond",
+      "startDate": "2014-11-01"
+    },
+    {
+      "company": "Microsoft",
+      "summary": "Founding member of the Reach, Engagement & Delight team for OneDrive.  This unique team is tasked with data analytics for all major business decisions with a focus on driving engagement & reliability for all of OneDrive \n\nScope ranged from implementing telemetry in all areas of the product chain, from backend services through to clients on all platforms, writing analysis scripts, developing statistical models, creating visualizations & presentations for audiences ranging from senior management to the entire team of ~300 engineers.",
+      "position": "Principal Quality Engineer",
+      "startDate": "2014-04-01",
+      "endDate": "2014-09-01"
+    },
+    {
+      "company": "Microsoft",
+      "summary": "Principal test engineer working on file sync engine, product telemetry & visualization in the Devices and Roaming Experience team.",
+      "position": "Principal SDET",
+      "startDate": "2011-09-01",
+      "endDate": "2014-04-01"
+    },
+    {
+      "company": "Microsoft",
+      "summary": "Test lead on the Client Sync Engine team in the Windows Live Mesh team.  Led a team responsible for testing the file sync engine, validating performance, stress, and functional correctness for the client components of the distributed client service and peer to peer file synchronization engine.  Shipped as part of Windows Live Essentials in 2010.",
+      "position": "Senior Test Lead",
+      "startDate": "2008-12-01",
+      "endDate": "2011-09-01"
+    },
+    {
+      "company": "Microsoft",
+      "summary": "Test Manager for the ISV&NT product team, makers of Visual C++.  Was the Test Manager for the initial phases of Visual C++ 2010.",
+      "position": "Test Manager",
+      "startDate": "2007-12-01",
+      "endDate": "2008-12-01"
+    },
+    {
+      "company": "Microsoft",
+      "summary": "Test Manager for the Phoenix product unit.  Our product unit delivers the optimizing backends for the Visual C++ compiler, along with associated tools.  In addition, we deliver the Phoenix program analysis and transformation platform.",
+      "position": "Test Manager",
+      "startDate": "2004-10-01",
+      "endDate": "2007-12-01"
+    },
+    {
+      "company": "Microsoft",
+      "summary": "Test lead for the x64 (a.k.a. AMD64) code generator and tools during the initial port of the Windows and .NET platforms.  Worked closely with internal partners (particularly Windows) as well as external ones (particularly AMD).",
+      "position": "Test Lead",
+      "startDate": "2001-05-01",
+      "endDate": "2004-10-01"
+    },
+    {
+      "company": "Microsoft",
+      "summary": "SDE/T on the C runtime library, focusing on the IA64 platform.",
+      "position": "Software Design Engineer in Test",
+      "startDate": "2000-02-01",
+      "endDate": "2001-05-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Western Ontario",
+      "area": "Robotics, Software",
+      "studyType": "M. Eng. Sci.",
+      "startDate": "1998-01-01",
+      "endDate": "2000-01-01"
+    },
+    {
+      "institution": "Concordia University",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor",
+      "startDate": "1994-01-01",
+      "endDate": "1997-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Software Design"
+    },
+    {
+      "name": ".NET"
+    },
+    {
+      "name": "Testing"
+    },
+    {
+      "name": "Test Automation"
+    },
+    {
+      "name": "Distributed Systems"
+    },
+    {
+      "name": "Software Engineering"
+    },
+    {
+      "name": "C++"
+    },
+    {
+      "name": "Visual Studio"
+    },
+    {
+      "name": "C"
+    },
+    {
+      "name": "WinDbg"
+    },
+    {
+      "name": "Software Development"
+    },
+    {
+      "name": "Windows"
+    },
+    {
+      "name": "C#"
+    },
+    {
+      "name": "Silverlight"
+    },
+    {
+      "name": "Software Quality Assurance"
+    },
+    {
+      "name": "TFS"
+    },
+    {
+      "name": "Scrum"
+    },
+    {
+      "name": "Perl"
+    },
+    {
+      "name": "JavaScript"
+    },
+    {
+      "name": "Ubuntu"
+    },
+    {
+      "name": "Performance Testing"
+    },
+    {
+      "name": "Test Planning"
+    },
+    {
+      "name": "Test Design"
+    },
+    {
+      "name": "Test Strategy"
+    },
+    {
+      "name": "Test Management"
+    },
+    {
+      "name": "HTML 5"
+    },
+    {
+      "name": "Powershell"
+    },
+    {
+      "name": "Python"
+    },
+    {
+      "name": "Management"
+    },
+    {
+      "name": "Agile Methodologies"
+    },
+    {
+      "name": "Windows Azure"
+    },
+    {
+      "name": "Win32 API"
+    },
+    {
+      "name": "People Management"
+    },
+    {
+      "name": "Mac OS X"
+    },
+    {
+      "name": "Linux"
+    },
+    {
+      "name": "OS X"
+    },
+    {
+      "name": "CSS"
+    },
+    {
+      "name": "D3.js"
+    },
+    {
+      "name": "jQuery"
+    },
+    {
+      "name": "Ruby"
+    },
+    {
+      "name": "WordPress"
+    },
+    {
+      "name": "Node.js"
+    }
+  ],
+  "languages": [
+    {
+      "language": "French"
+    }
+  ]
 }

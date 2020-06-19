@@ -7,24 +7,27 @@ module.exports = {
   siteMetadata: {
     title: `Freeroaming Solutions`,
     description: `Contract and Freelance Software Development`,
-    author: `@iainbryson`,
+    author: `Iain Bryson`,
+    url: `https://freeroamingsolutions.com`,
     contacts: {
-      email: 'iain@iain-bryson.ca',
-      github: 'http://github.com/iainbryson',
-      linkedin: 'https://www.linkedin.com/in/iainbryson',
-      stackoverflow: 'https://stackoverflow.com/users/5673187/iain-bryson',
-    }
+      email: "iain@iain-bryson.ca",
+      linkedin: "https://www.linkedin.com/in/iainbryson",
+    },
+    profiles: {
+      github: "http://github.com/iainbryson",
+      stackoverflow: "https://stackoverflow.com/users/5673187/iain-bryson",
+    },
   },
   plugins: [
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /\.inline\.svg$/
-        }
-      }
+          include: /\.inline\.svg$/,
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -35,7 +38,7 @@ module.exports = {
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.teal["400"],
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`,
+        icon: `src/images/iconmonstr-globe-4-icon.svg`,
       },
     },
 
@@ -44,27 +47,27 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/images`,
-        name: 'images'
-      }
+        name: "images",
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/content`,
-        name: 'data'
-      }
+        name: "data",
+      },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
-          require('postcss-import')(), // Add support for sass-like '@import'
-          require('postcss-extend')(), // Add support for sass-like '@extend'
-          require('postcss-nesting')(), // Add support for sass-like nesting of rules
+          require("postcss-import")(), // Add support for sass-like '@import'
+          require("postcss-extend")(), // Add support for sass-like '@extend'
+          require("postcss-nesting")(), // Add support for sass-like nesting of rules
           require(`postcss-preset-env`)({
-            stage: 3 // More info about stages: https://cssdb.org/#staging-process
+            stage: 3, // More info about stages: https://cssdb.org/#staging-process
           }),
           require(`tailwindcss`)(tailwindConfig),
           require(`autoprefixer`),
@@ -75,15 +78,21 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-//          families: ['Palatino Sans Arabic']
-          families: ['Cormorant Infant']
-        }
-      }
+          //          families: ['Palatino Sans Arabic']
+          families: ["Cormorant Infant"],
+        },
+      },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-nullish-coalescing-operator`,
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "frs2",
+      },
+    },
   ],
 };

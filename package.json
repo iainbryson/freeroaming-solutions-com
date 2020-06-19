@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
+  "name": "freeroaming-solutions-com",
+  "description": "Freeroaming Solutions",
   "version": "4.0.0",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "author": "Iain Bryson <iain@iain-bryson.ca>",
   "dependencies": {
     "@babel/core": "^7.10.2",
     "@babel/plugin-proposal-logical-assignment-operators": "^7.10.1",
@@ -16,6 +16,7 @@
     "gatsby-plugin-postcss": "2.3.4",
     "gatsby-plugin-react-helmet": "3.3.4",
     "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-s3": "^0.3.3",
     "gatsby-plugin-sharp": "^2.6.11",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.3.11",
@@ -54,7 +55,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "npm run -n \"-r dotenv/config\" && npm run build && gatsby-plugin-s3 deploy"
   },
   "devDependencies": {
     "@tailwindcss/custom-forms": "0.2.1",

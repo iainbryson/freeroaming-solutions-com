@@ -1,3 +1,7 @@
 .main-background {
-    background: radial-gradient(circle, rgba(238,237,174,0.5102415966386555) 40%, rgba(137,191,255,0.5046393557422969) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(238, 237, 174, 0.5102415966386555) 40%,
+    rgba(137, 191, 255, 0.5046393557422969) 100%
+  );
 }
