@@ -40,9 +40,27 @@
       "assets": [
         {
           "title": "Keeper",
-          "description": "The keeper main main page",
+          "description": "The keeper search page",
           "asset": "productShot.png",
+          "hero": false
+        },
+        {
+          "title": "Keeper",
+          "description": "The keeper main page",
+          "asset": "keeperFrontPage.png",
           "hero": true
+        },
+        {
+          "title": "Keeper",
+          "description": "The keeper collections page",
+          "asset": "keeperCollections.png",
+          "hero": false
+        },
+        {
+          "title": "Keeper",
+          "description": "The keeper main page",
+          "asset": "keeperSearch.mp4",
+          "hero": false
         }
       ]
     },

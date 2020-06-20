@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import SharpImage from "../sharpImage";
 import { TechnologyTag } from "../helpers";
 
-function Project(props) {
+function ProjectCard(props) {
   const { project, key } = props;
 
   const technologyTags = project.technologies.map((tech) => (
@@ -23,7 +23,11 @@ function Project(props) {
         className="rounded overflow-hidden shadow-lg m-4 bg-gray-lightest transform transition-transform duration-300 ease-in-out hover:scale-105"
         onClick={() => props.onClick(project)}
       >
-        <SharpImage className="w-full" src={heroSrc}></SharpImage>
+        <SharpImage
+          className="w-full h-64 mx-auto"
+          src={heroSrc}
+          imgStyle={{ objectPosition: "center 0" }}
+        ></SharpImage>
         <div className="px-6 py-4">
           <div className="font-brand text-black text-xl mb-2">
             {project.name}
@@ -39,9 +43,9 @@ function Project(props) {
   return card;
 }
 
-Project.propTypes = {
+ProjectCard.propTypes = {
   project: PropTypes.any.isRequired,
   onClick: PropTypes.func,
 };
 
-export default Project;
+export default ProjectCard;

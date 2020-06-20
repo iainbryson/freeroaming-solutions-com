@@ -4,6 +4,7 @@ import Img from "gatsby-image";
 import PropTypes from "prop-types";
 
 const SharpImage = ({ src, ...props }) => {
+  // .*.(?!svg$)[^.]+
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { internal: { mediaType: { regex: "images/" } } }) {
@@ -11,8 +12,9 @@ const SharpImage = ({ src, ...props }) => {
           node {
             relativePath
             childImageSharp {
-              fluid(maxWidth: 300) {
+              fluid(maxWidth: 424) {
                 ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluidLimitPresentationSize
               }
             }
           }

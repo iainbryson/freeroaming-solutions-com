@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ProjectDetails from "./projectDetails";
 import { graphql, useStaticQuery } from "gatsby";
-import Project from "./project";
+import ProjectCard from "./projectCard";
 import * as PropTypes from "prop-types";
 
 // Alternative to using GraphQL
@@ -60,7 +60,7 @@ function ProjectArticle(props) {
     .flatMap((edge) => edge.node.projects || [])
     .filter(Boolean);
   const projectComponents = allProjects.map((project) =>
-    Project({ key: project.id, project, onClick: setFocusProject })
+    ProjectCard({ key: project.id, project, onClick: setFocusProject })
   );
 
   return (

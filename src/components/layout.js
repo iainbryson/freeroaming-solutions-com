@@ -50,11 +50,10 @@ function Layout({ children }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              { siteMetadata.author }
+              {siteMetadata.author}
             </a>
             &nbsp; &copy; {new Date().getYear() + 1900}
           </p>
-
         </nav>
       </footer>
     </div>
