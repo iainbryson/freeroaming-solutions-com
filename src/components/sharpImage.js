@@ -12,7 +12,7 @@ const SharpImage = ({ src, ...props }) => {
           node {
             relativePath
             childImageSharp {
-              fluid(maxWidth: 424, quality: 90) {
+              fluid(maxWidth: 476, quality: 90) {
                 ...GatsbyImageSharpFluid
                 ...GatsbyImageSharpFluidLimitPresentationSize
               }

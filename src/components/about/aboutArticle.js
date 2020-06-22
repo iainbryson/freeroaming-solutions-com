@@ -4,14 +4,16 @@ import SharpImage from "../sharpImage";
 import Tooltip from "../tooltip";
 
 function AboutArticle(props) {
+  const cardStyle = "w-full flex lg:w-1/2 xl:w-1/2 px-2 my-2 mx-auto";
+
   return (
     <article key={props.anchorId} id={props.anchorId} className="min-h-screen">
       <h2 className="inline-block p-3 mb-4 text-4xl font-titles text-brand-dark">
         About
       </h2>
       <section className="container mx-auto flex flex-wrap mb-4 p-3 w-full">
-        <section className="w-full flex lg:w-1/3 xl:w-1/3 px-2 my-2 mx-auto">
-          <div className="overflow-hidden mx-1 lg:m-auto h-full w-full flex justify-center align-center items-center">
+        <section className={cardStyle}>
+          <div className="overflow-hidden my-4 mx-1 h-full w-full flex justify-center align-center items-center">
             <SharpImage
               className="w-full rounded shadow-lg "
               src="iain2.jpg">
@@ -19,8 +21,8 @@ function AboutArticle(props) {
             </SharpImage>
           </div>
         </section>
-        <section className="w-full lg:w-1/3 xl:w-1/3 px-2 my-2  mx-auto">
-          <div className="rounded overflow-hidden shadow-lg my-4 mx-1  bg-gray-lightest p-6 h-full">
+        <section className={cardStyle}>
+          <div className="rounded overflow-hidden shadow-lg my-4 mx-1  p-6 bg-gray-lightest w-full  h-full">
             <h3
               className="hidden absolute right-0 top-0 text-right text-brand-dark text-6xl mb-1 opacity-25"
               style={{ transform: "translateY(-100%)" }}
@@ -46,8 +48,8 @@ function AboutArticle(props) {
             </p>
           </div>
         </section>
-        <section className="w-full lg:w-1/3 xl:w-1/3 px-2 my-2 mx-auto">
-          <div className="rounded overflow-hidden shadow-lg my-4 mx-1 bg-gray-lightest p-6 h-full">
+        <section className={cardStyle}>
+          <div className="rounded overflow-hidden shadow-lg my-4 mx-1 bg-gray-lightest p-6 w-full h-full">
             <h3
               className="hidden absolute right-0 top-0 text-right text-brand-dark text-6xl mb-1 opacity-25"
               style={{ transform: "translateY(-100%)" }}
@@ -65,6 +67,24 @@ function AboutArticle(props) {
             </ul>
             <br />
             <p>Take a look at the portfolio below to see some examples.</p>
+          </div>
+        </section>
+
+        <section className={cardStyle}>
+          <div className="rounded overflow-hidden shadow-lg my-4 mx-1 bg-gray-lightest p-6 w-full h-full">
+            <h3
+              className="hidden absolute right-0 top-0 text-right text-brand-dark text-6xl mb-1 opacity-25"
+              style={{ transform: "translateY(-100%)" }}
+            >
+              Who
+            </h3>
+            <h3 className="text-brand-dark text-2xl font-titles">
+              Who am I?
+            </h3>
+            <br />
+            <p>I am Iain Bryson.  I&apos;ve worked with software all my professional life, mostly for Microsoft.  In 2014
+            I transitioned to the world of freelancing and became a <b>digital <i>semi-</i>nomad</b> &mdash; travelling then staying put for long periods.  So now I get to
+            scratch the travel bug, live in exotic (and not-so-exotic) locations and continue to make great software.</p>
           </div>
         </section>
       </section>
