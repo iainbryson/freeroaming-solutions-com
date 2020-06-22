@@ -30,7 +30,7 @@ function ContactArticle(props) {
   ).map(([medium, address]) => (
     <ContactButton
       medium={medium}
-      address={address}
+      address={medium === 'email' ? `mailto://${address}` : address}
       key={medium}
     ></ContactButton>
   ));
@@ -46,7 +46,7 @@ function ContactArticle(props) {
   ));
 
   return (
-    <article key={props.anchorId} id={props.anchorId}>
+    <article key={props.anchorId} id={props.anchorId} className="min-h-screen">
       <h2 className="inline-block p-3 mb-4 text-4xl font-titles text-brand-dark">
         Contact
       </h2>

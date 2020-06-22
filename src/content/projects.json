@@ -40,9 +40,9 @@
       "assets": [
         {
           "title": "Keeper",
-          "description": "The keeper search page",
-          "asset": "productShot.png",
-          "hero": false
+          "description": "The keeper info page",
+          "asset": "socialshare.png",
+          "hero": true
         },
         {
           "title": "Keeper",
@@ -52,13 +52,25 @@
         },
         {
           "title": "Keeper",
+          "description": "The keeper search page",
+          "asset": "productShot.png",
+          "hero": false
+        },
+        {
+          "title": "",
+          "description": "",
+          "asset": "keeperInfrastructure.png",
+          "hero": false
+        },
+        {
+          "title": "Keeper",
           "description": "The keeper collections page",
           "asset": "keeperCollections.png",
           "hero": false
         },
         {
-          "title": "Keeper",
-          "description": "The keeper main page",
+          "title": "Keeper Demo Video",
+          "description": "The keeper demo video",
           "asset": "keeperSearch.mp4",
           "hero": false
         }
@@ -74,9 +86,9 @@
         "rails",
         "ruby",
         "AWS",
-        "AWS CDK",
         "JavaScript",
         "Vue.js",
+        "Vanilla.js",
         "Slack API",
         "Postgres"
       ],
@@ -93,14 +105,50 @@
         "Additionally, we designed a small algorithm to power a browse experience where usage signals from the users",
         "would boost the prominence of individual charts.",
         "",
-        "At it's peak, Grafiti was serving 100k users a month."
+        "At it's peak, Grafiti Search was serving 100k users a month."
       ],
       "contributions": [
         "As CTO, I let a small team of developments (1-3 at any given time), led the architecture and wrote",
-        "the code across the infrastructure (provisioned using AWS CloudFOrmation), devops (CI/CD), serverless",
+        "the code across the infrastructure (provisioned using AWS CloudFormation), devops (CI/CD), serverless",
         "micro-services (AWS lambda functions), Rails backend and job server and Vanilla JS frontend."
       ],
       "assets": [
+        {
+          "title": "",
+          "description": "",
+          "asset": "grafitiInfrastructure1.png",
+          "hero": false
+        },
+        {
+          "title": "",
+          "description": "",
+          "asset": "grafitiSearchMain.png",
+          "hero": true
+        },
+        {
+          "title": "",
+          "description": "",
+          "asset": "grafitiSearchCollection.png",
+          "hero": false
+        },
+        {
+          "title": "",
+          "description": "",
+          "asset": "grafitiSearchCollections.png",
+          "hero": false
+        },
+        {
+          "title": "",
+          "description": "",
+          "asset": "grafitiSearchSignIn.png",
+          "hero": false
+        },
+        {
+          "title": "",
+          "description": "",
+          "asset": "productShot2.png",
+          "hero": false
+        },
         {
           "title": "",
           "description": "",
@@ -134,7 +182,7 @@
         {
           "title": "",
           "description": "",
-          "asset": "chartCreation.png",
+          "asset": "defaultOGImage.png",
           "hero": true
         }
       ]
@@ -163,6 +211,12 @@
           "title": "",
           "description": "",
           "asset": "chartCreation.png",
+          "hero": true
+        },
+        {
+          "title": "Demo Video",
+          "description": "Video demonstrating Grafiti iOS app usage in January 2018",
+          "asset": "appDemoJan2018.mp4",
           "hero": true
         }
       ]
@@ -205,8 +259,8 @@
       ],
       "assets": [
         {
-          "title": "",
-          "description": "",
+          "title": "Query Construction Page",
+          "description": "The metadata query construction page.",
           "asset": "metadataQuery.png",
           "hero": true
         }
@@ -240,8 +294,38 @@
       ],
       "assets": [
         {
-          "title": "",
-          "description": "",
+          "title": "The DTU Logo",
+          "description": "The DTU Logo",
+          "asset": "dtulogo.svg",
+          "hero": true
+        },
+        {
+          "title": "eNote notes page",
+          "description": "Page showing course notes.",
+          "asset": "enotePage.png",
+          "hero": true
+        },
+        {
+          "title": "eNotes page editor",
+          "description": "The inline editor for Markdown with live preview",
+          "asset": "enoteEditor.png",
+          "hero": true
+        },
+        {
+          "title": "The Quiz admin page",
+          "description": "The Quiz admin page",
+          "asset": "quiz.png",
+          "hero": true
+        },
+        {
+          "title": "Quiz Taking Page",
+          "description": "Quiz Taking Page",
+          "asset": "quizAdmin.png",
+          "hero": true
+        },
+        {
+          "title": "eNote Notes Example",
+          "description": "Professors write notes with a custom MarkDown flavor, which includes LaTeX math and Q & A",
           "asset": "qandaNotes.png",
           "hero": true
         }
@@ -263,7 +347,7 @@
         "OpenAPI"
       ],
       "description": [
-        "Elicit is a join project between DTU in Denmark and NYU in New York City to provide a platform for psychological experiments"
+        "Elicit is a joint project between DTU in Denmark and NYU in New York City to provide a platform for psychological experiments"
       ],
       "longDescription": [
         "The elicit project has two main components:",
@@ -285,10 +369,22 @@
       ],
       "assets": [
         {
-          "title": "",
-          "description": "",
+          "title": "The Elicit Logo",
+          "description": "The Elicit Logo",
+          "asset": "elicitLogo.png",
+          "hero": true
+        },
+        {
+          "title": "Study Selection",
+          "description": "In this page, a study participant selects a study to take.",
           "asset": "studySelection.png",
           "hero": true
+        },
+        {
+          "title": "Webcam Calibration",
+          "description": "To track eye movements, a calibration is necessary.  This page shows the participant how to calibrate and performs the calibration.",
+          "asset": "webcamCalibration.png",
+          "hero": false
         }
       ]
     }

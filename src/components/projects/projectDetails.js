@@ -51,18 +51,13 @@ function ProjectDetails(props) {
   const assetComponents = assets.map((a) => {
     const assetRef = `projects/${project.id.toLowerCase()}/${a.asset}`;
     let inner;
-    if (/\.(gif|jpe?g|tiff|png|webp|bmp)$/i.test(a.asset)) {
+    if (/\.(gif|jpe?g|tiff|png|webp|bmp|svg|mp4)$/i.test(a.asset)) {
       inner = (
         <SharpImage
           className="m-auto w-full h-full"
           src={assetRef}
+          imgStyle={{ objectFit: "contain" }}
         ></SharpImage>
-      );
-    } else if (/\.(mp4)$/i.test(a.asset)) {
-      inner = (
-        <video className="m-auto w-full h-full " controls>
-          <source src={assetRef} type="video/mp4" />
-        </video>
       );
     } else {
       inner = <div>{a.asset}</div>;

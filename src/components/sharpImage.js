@@ -12,23 +12,35 @@ const SharpImage = ({ src, ...props }) => {
           node {
             relativePath
             childImageSharp {
-              fluid(maxWidth: 424) {
+              fluid(maxWidth: 424, quality: 90) {
                 ...GatsbyImageSharpFluid
                 ...GatsbyImageSharpFluidLimitPresentationSize
               }
             }
+            extension
+            publicURL
           }
         }
       }
     }
   `);
 
-  const match = useMemo(
+  const {node} = useMemo(
     () => data.allFile.edges.find(({ node }) => src === node.relativePath),
     [data, src]
   );
 
-  return <Img fluid={match.node.childImageSharp.fluid} {...props} />;
+  if (node.extension === 'svg') {
+    return <img src={node.publicURL} {...props} />;
+  }
+  if (node.extension === 'mp4') {
+    return <video className="m-auto w-full h-full " controls>
+      <source src={node.publicURL} type="video/mp4" />
+    </video>
+  }
+
+  return <Img fluid={node.childImageSharp.fluid} {...props} />;
+
 };
 
 SharpImage.propTypes = {
