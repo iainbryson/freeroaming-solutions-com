@@ -12,7 +12,7 @@ import ContactArticle from "../components/contact/contactArticle";
 const MenuTrayLazy = React.lazy(() => import("../components/menu/menuTray"));
 
 function IndexPage() {
-  const isSSR = typeof window === "undefined";
+  const isSSR = (typeof window === "undefined");
 
   const menuItems = {
     about: AboutArticle,
@@ -38,11 +38,11 @@ function IndexPage() {
       )}
 
       <article className="text-center flex h-screen  content-center justify-center flex-col">
-        <section className="mx-auto h-auto  text-brand-dark">
-          <h1 className="inline-block p-3 mb-4 text-6xl  font-titles">
+        <section  className="mx-auto h-auto  text-brand-dark">
+          <h1 className="inline-block mb-4 text-4xl lg:text-6xl  font-titles">
             Freeroaming Solutions
           </h1>
-          <h3 className="block p-3 mb-4 text-2xl font-bold  font-titles">
+          <h3 className="block mb-4 text-2xl font-bold  font-titles">
             Contract & Freelance Software Development
           </h3>
         </section>

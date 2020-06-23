@@ -31,7 +31,10 @@ const SharpImage = ({ src, ...props }) => {
   );
 
   if (node.extension === 'svg') {
-    return <img src={node.publicURL} {...props} />;
+    // eslint-disable-next-line no-unused-vars
+    const {imgStyle, ...safeForImgProps} = props;
+
+    return <img src={node.publicURL} {...safeForImgProps} />;
   }
   if (node.extension === 'mp4') {
     return <video className="m-auto w-full h-full " controls>
@@ -45,6 +48,7 @@ const SharpImage = ({ src, ...props }) => {
 
 SharpImage.propTypes = {
   src: PropTypes.string.isRequired,
+  imgStyle: PropTypes.any,
 };
 
 export default SharpImage;

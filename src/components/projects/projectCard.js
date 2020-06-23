@@ -20,23 +20,23 @@ function ProjectCard(props) {
   const card = (
     <li key={key} className="w-full lg:w-1/2 xl:w-1/2 lg:px-2 mx-auto">
       <section
-        className="rounded overflow-hidden shadow-lg m-4 bg-gray-lightest transform transition-transform duration-300 ease-in-out hover:scale-105"
+        className="rounded overflow-hidden shadow-lg m-2 lg:m-4 bg-gray-lightest transform transition-transform duration-300 ease-in-out hover:scale-105"
         onClick={() => props.onClick(project)}
       >
         <SharpImage
           className="w-full h-64 mx-auto"
           src={heroSrc}
-          imgStyle={{ objectPosition: "center 0" }}
+          imgStyle={{ objectFit: 'contain', objectPosition: "center 0" }}
         ></SharpImage>
-        <div className="px-6 py-4">
+        <div className="p-3 lg:px-6 lg:py-4">
           <div className="font-brand text-black text-xl mb-2">
             {project.name}
           </div>
-          <p className="text-gray-darker text-base text-left">
+          <p className="text-gray-darker text-base text-left h-24">
             {project.description.join("\n")}
           </p>
         </div>
-        <div className="px-6 py-4">{technologyTags}</div>
+        <div className="px-6 py-4 h-24 ">{technologyTags}</div>
       </section>
     </li>
   );

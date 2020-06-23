@@ -3,26 +3,20 @@ import PropTypes from "prop-types";
 import SharpImage from "../sharpImage";
 import Tooltip from "../tooltip";
 
+import style from "./aboutArticle.module.css";
+
 function AboutArticle(props) {
-  const cardStyle = "w-full flex lg:w-1/2 xl:w-1/2 px-2 my-2 mx-auto";
+  const cardStyle = "w-full flex px-2 my-2 mx-auto lg:h-full";
+  const cardHeaderStyle = "inline-block p-3 mb-4 mx-4 text-4xl font-titles text-brand-dark";
 
   return (
     <article key={props.anchorId} id={props.anchorId} className="min-h-screen">
-      <h2 className="inline-block p-3 mb-4 text-4xl font-titles text-brand-dark">
+      <h2 className={cardHeaderStyle}>
         About
       </h2>
-      <section className="container mx-auto flex flex-wrap mb-4 p-3 w-full">
-        <section className={cardStyle}>
-          <div className="overflow-hidden my-4 mx-1 h-full w-full flex justify-center align-center items-center">
-            <SharpImage
-              className="w-full rounded shadow-lg "
-              src="iain2.jpg">
-              imgStyle={{objectFit: 'contain'}}
-            </SharpImage>
-          </div>
-        </section>
-        <section className={cardStyle}>
-          <div className="rounded overflow-hidden shadow-lg my-4 mx-1  p-6 bg-gray-lightest w-full  h-full">
+      <section className={`container mx-auto flex flex-wrap lg:p-3 mb-4 lg:mb-0 ${style.aboutContainer}`}>
+        <section className={`${cardStyle} ${style.landscape}`}>
+          <div className="rounded overflow-hidden shadow-lg mx-1 p-6 bg-gray-lightest w-full  h-full">
             <h3
               className="hidden absolute right-0 top-0 text-right text-brand-dark text-6xl mb-1 opacity-25"
               style={{ transform: "translateY(-100%)" }}
@@ -32,9 +26,9 @@ function AboutArticle(props) {
             <h3 className="text-brand-dark text-2xl font-titles">Welcome!</h3>
             <br />
             <p>
-              This is <span>Freeroaming Solutions</span>, a freelance and
+              <span>Freeroaming Solutions</span> is a freelance and
               contract software development company owned, run and staffed
-              entirely by me: <span>Iain Bryson</span>.
+              entirely by me, <span>Iain Bryson</span>.
             </p>
             <br />
             <p>
@@ -48,8 +42,19 @@ function AboutArticle(props) {
             </p>
           </div>
         </section>
+
+        <section className={`${cardStyle} ${style.portrait} mt-6 lg:mt-auto`}>
+          <div className="overflow-hidden h-full w-full flex justify-center lg:justify-start mx-1 align-center items-center ">
+            <SharpImage
+              className="w-full rounded shadow-lg "
+              src="iain2.jpg">
+              imgStyle={{objectFit: 'contain'}}
+            </SharpImage>
+          </div>
+        </section>
+
         <section className={cardStyle}>
-          <div className="rounded overflow-hidden shadow-lg my-4 mx-1 bg-gray-lightest p-6 w-full h-full">
+          <div className="rounded overflow-hidden shadow-lg bg-gray-lightest p-6 w-full h-full">
             <h3
               className="hidden absolute right-0 top-0 text-right text-brand-dark text-6xl mb-1 opacity-25"
               style={{ transform: "translateY(-100%)" }}
@@ -71,7 +76,7 @@ function AboutArticle(props) {
         </section>
 
         <section className={cardStyle}>
-          <div className="rounded overflow-hidden shadow-lg my-4 mx-1 bg-gray-lightest p-6 w-full h-full">
+          <div className="rounded overflow-hidden shadow-lg bg-gray-lightest p-6 w-full h-full">
             <h3
               className="hidden absolute right-0 top-0 text-right text-brand-dark text-6xl mb-1 opacity-25"
               style={{ transform: "translateY(-100%)" }}

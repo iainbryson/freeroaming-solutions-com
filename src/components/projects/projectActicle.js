@@ -8,6 +8,8 @@ import * as PropTypes from "prop-types";
 // import projects from "../../content/projects.json";
 
 function ProjectArticle(props) {
+  const cardHeaderStyle = "inline-block p-3 mb-4 mx-4 text-4xl font-titles text-brand-dark";
+
   const [state, setState] = useState({
     focusProject: null,
   });
@@ -66,7 +68,7 @@ function ProjectArticle(props) {
   return (
     <article key={props.anchorId} id={props.anchorId}>
       {focusModal}
-      <h2 className="inline-block p-3 mb-4 text-4xl font-titles text-brand-dark">
+      <h2 className={cardHeaderStyle}>
         Portfolio
       </h2>
       <ul className="container mx-auto flex flex-wrap mb-4 lg:p-3 w-full">

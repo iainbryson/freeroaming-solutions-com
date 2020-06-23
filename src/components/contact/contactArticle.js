@@ -4,6 +4,8 @@ import { graphql, useStaticQuery } from "gatsby";
 import ContactButton from "../contactButton";
 
 function ContactArticle(props) {
+  const cardHeaderStyle = "inline-block p-3 mb-4 mx-4 text-4xl font-titles text-brand-dark";
+
   const { site } = useStaticQuery(graphql`
     query ContactsAndProfilesQuery {
       site {
@@ -47,7 +49,7 @@ function ContactArticle(props) {
 
   return (
     <article key={props.anchorId} id={props.anchorId} className="min-h-screen">
-      <h2 className="inline-block p-3 mb-4 text-4xl font-titles text-brand-dark">
+      <h2 className={cardHeaderStyle}>
         Contact
       </h2>
       <section className="container mx-auto flex flex-wrap mb-4 p-3 w-full">
