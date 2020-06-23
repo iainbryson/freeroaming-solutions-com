@@ -44,7 +44,7 @@ function DisclosureButton(props) {
 
   const card = (
     <button
-      className={`rounded overflow-hidden shadow-lg mx-1 lg:mx-4 inline-block p-1 ${classExtras.join(
+      className={`rounded-full overflow-hidden shadow-lg mx-1 lg:mx-4 inline-block p-3 ${classExtras.join(
         " "
       )}`}
       onClick={() => scrollTo(rect?.top + location)}

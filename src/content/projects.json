@@ -163,7 +163,7 @@
       "startDate": "2018-06-01T00:00:00Z",
       "endDate": "2019-12-15T00:00:00Z",
       "roles": ["iOS Developer"],
-      "technologies": ["Rails", "Ruby", "React.js", "D3.js", "Next.js"],
+      "technologies": ["Rails", "Ruby", "React.js", "D3.js", "Next.js", "JavaScript"],
       "description": [
         "Grafiti Chart Maker was an app designed to make it easy to create charts on a mobile device."
       ],
@@ -231,6 +231,7 @@
         "rails",
         "ruby",
         "JavaScript",
+        "TypeScript",
         "MariaDB",
         "Vue.js",
         "Nuxt.js",
@@ -272,7 +273,7 @@
       "startDate": "2016-03-01T00:00:00Z",
       "endDate": "2019-06-30T00:00:00Z",
       "roles": ["Full Stack Development", "DevOps"],
-      "technologies": ["rails", "ruby", "JavaScript", "MongoDB", "MathJax"],
+      "technologies": ["rails", "ruby", "JavaScript","MongoDB", "MathJax"],
       "description": [
         "eNote is a custom e-learning platform built for Denmark Technical University (DTU) from scratch."
       ],
@@ -342,8 +343,8 @@
         "ruby",
         "JavaScript",
         "Postgres",
-        "React",
-        "Typescript",
+        "React.js",
+        "TypeScript",
         "OpenAPI"
       ],
       "description": [
@@ -385,6 +386,36 @@
           "description": "To track eye movements, a calibration is necessary.  This page shows the participant how to calibrate and performs the calibration.",
           "asset": "webcamCalibration.png",
           "hero": false
+        }
+      ]
+    },
+    {
+      "name": "Microsoft",
+      "id": "microsoft",
+      "startDate": "2000-02-01T00:00:00Z",
+      "endDate": "2014-10-31T00:00:00Z",
+      "roles": ["SDET", "Manager"],
+      "technologies": [
+        "C++",
+        "C#",
+        "D3.js",
+        ".NET"
+      ],
+      "description": [
+        "My years at microsoft were divided between the Visual C++ team and the OneDrive team."
+      ],
+      "longDescription": [
+        ""
+      ],
+      "contributions": [
+        "I took on many roles at Microsoft, from individual contributor to 2nd level manager, all the SDET discipline."
+      ],
+      "assets": [
+        {
+          "title": "The Microsoft Logo",
+          "description": "The Microsoft Logo",
+          "asset": "msft.png",
+          "hero": true
         }
       ]
     }

@@ -35,3 +35,45 @@
         grid-column-end: span 2;
     }
 }
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+
+}
+
+.cards2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    perspective: 40rem;
+}
+
+.card-body {
+    transform-style: preserve-3d;
+}
+
+.flipped {
+    transform: rotateX(-180deg);
+}
+
+.card-front, .card-back {
+    backface-visibility: hidden;
+    align-items: center;
+    align-content: center;
+}
+
+.card-back {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    transform: rotateX(-180deg);
+}
+
+.card-content {
+    display: inline-block;
+}

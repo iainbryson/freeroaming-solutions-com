@@ -1,13 +1,78 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import SharpImage from "../sharpImage";
 import Tooltip from "../tooltip";
-
 import style from "./aboutArticle.module.css";
+
+import { queryAllProjects } from "../projectsQuery";
+
+function prettyElapsedTime(deltaTime) {
+  let experiencePretty;
+  const expDays = Math.ceil(deltaTime / (1000 * 60 * 60 * 24));
+  const expYears = Math.floor(expDays / 365);
+  const expMonths = Math.ceil((expDays - 365 * expYears) / 30);
+  if (expYears > 0) {
+    if (expMonths === 0) {
+      experiencePretty = `${expYears} Years`;
+    } else {
+      experiencePretty = `${expYears} Years,     ${expMonths} Months`;
+    }
+  } else {
+    experiencePretty = `${expMonths} Months`;
+  }
+  return experiencePretty;
+}
 
 function AboutArticle(props) {
   const cardStyle = "w-full flex px-2 my-2 mx-auto lg:h-full";
   const cardHeaderStyle = "inline-block p-3 mb-4 mx-4 text-4xl font-titles text-brand-dark";
+
+  const [topSkillIdx, setTopSkillIdx] = useState(0);
+  const [topBackfaceSkillIdx, setBackfaceTopSkillIdx] = useState(0);
+  const [skillCardFlipState, setSkillCardFlipState] = useState('unflipped');
+
+  const skills = Object.values(queryAllProjects().flatMap((project) => {
+    return project.technologies.map(technology => ({
+      technology: technology.toLowerCase(),
+      startDate: project.startDate,
+      experience: new Date(project.endDate) - new Date(project.startDate),
+      completedProjectCount: 1
+    }))
+  }).reduce((acc, t) => {
+    if (!acc[t.technology]) {
+      acc[t.technology] = t;
+      return acc;
+    }
+    if (acc[t.technology].startDate > t.startDate) acc[t.technology].startDate = t.startDate;
+    acc[t.technology].experience += t.experience;
+    acc[t.technology].completedProjectCount += t.completedProjectCount;
+    return acc;
+  }, {})).sort((a,b) => {
+    const d = b.completedProjectCount - a.completedProjectCount;
+    if (d !== 0) {
+      return d;
+    }
+    return b.experience - a.experience;
+  }).map((skill) => {
+    let experiencePretty = prettyElapsedTime(skill.experience);
+    let longevityPretty = prettyElapsedTime(new Date - new Date(skill.startDate));
+    return {...skill, experiencePretty, longevityPretty};
+  }).slice(0,10);
+
+  const flipCard = () => {
+    if (skillCardFlipState === 'flipped') {
+      setTopSkillIdx(( topBackfaceSkillIdx + 1) % 10);
+    } else {
+      setBackfaceTopSkillIdx((topSkillIdx + 1) % 10);
+    }
+
+    setSkillCardFlipState(skillCardFlipState === 'flipped' ? 'unflipped' : 'flipped');
+  };
+
+  useEffect(() => {
+    const flipper = setInterval(flipCard, 3000);
+    return () => clearInterval(flipper);
+  }, [skillCardFlipState, topBackfaceSkillIdx, topSkillIdx])
 
   return (
     <article key={props.anchorId} id={props.anchorId} className="min-h-screen">
@@ -71,7 +136,42 @@ function AboutArticle(props) {
               <li>System architecture design and consulting</li>
             </ul>
             <br />
-            <p>Take a look at the portfolio below to see some examples.</p>
+            <p>Take a look at the <a href="#portfolio" className="underline">portfolio</a> below to see some examples.</p>
+            <section className={`${style.cards} mt-4`}>
+              <div className={`${style.card} h-full`} onClick={flipCard}>
+              <div className={`${style.cardBody} h-full ${style[skillCardFlipState]} transition duration-300 ease-in-out `}>
+                <div className={`${style.cardFront} h-full flex justify-center align-center text-center  rounded bg-info-light rounded w-full px-3 py-1 text-sm font-semibold text-gray-darker`}>
+                  <span className={`${style.cardContent}`}>{skills[topSkillIdx].technology}</span>
+                </div>
+                <div className={`${style.cardBack} h-full flex justify-center align-center text-center rounded bg-info-light rounded px-3 py-1 text-sm font-semibold text-gray-darker`}>
+                  <span className={`${style.cardContent}`}>{skills[topBackfaceSkillIdx].technology}</span>
+                </div>
+              </div>
+              </div>
+
+              <div className={`${style.card} h-full`} onClick={flipCard}>
+                <div className={`${style.cardBody} h-full ${style[skillCardFlipState]} transition duration-300 ease-in-out delay-75`}>
+                  <div className={`${style.cardFront} h-full flex justify-center align-center text-center rounded bg-success-light rounded w-full px-3 py-1 text-sm font-semibold text-gray-darker`}>
+                    <span className={`${style.cardContent}`}>{skills[topSkillIdx].completedProjectCount} Completed Projects</span>
+                  </div>
+                  <div className={`${style.cardBack} h-full flex justify-center align-center text-center rounded bg-success-light rounded px-3 py-1 text-sm font-semibold text-gray-darker`}>
+                    <span className={`${style.cardContent}`}>{skills[topBackfaceSkillIdx].completedProjectCount} Completed Projects</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className={`${style.card} h-full`} onClick={flipCard}>
+                <div className={`${style.cardBody} f-full ${style[skillCardFlipState]} transition duration-300 ease-in-out delay-150`}>
+                  <div className={`${style.cardFront} h-full flex justify-center align-center text-center rounded bg-warning-light rounded w-full px-3 py-1 text-sm font-semibold text-gray-darker`}>
+                    <span className={`${style.cardContent}`}>{skills[topSkillIdx].longevityPretty}</span>
+                  </div>
+                  <div className={`${style.cardBack} h-full flex justify-center align-center text-center rounded bg-warning-light rounded px-3 py-1 text-sm font-semibold text-gray-darker`}>
+                    <span className={`${style.cardContent}`}>{skills[topBackfaceSkillIdx].longevityPretty}</span>
+                  </div>
+                </div>
+              </div>
+
+            </section>
           </div>
         </section>
 

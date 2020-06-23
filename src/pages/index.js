@@ -27,7 +27,7 @@ function IndexPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`contract`, `freelance`, `react.js`, `rails`, `ruby`, `vue.js`]}
         title="Home"
       />
 
@@ -42,7 +42,7 @@ function IndexPage() {
           <h1 className="inline-block mb-4 text-4xl lg:text-6xl  font-titles">
             Freeroaming Solutions
           </h1>
-          <h3 className="block mb-4 text-2xl font-bold  font-titles">
+          <h3 className="block mb-4 text-2xl font-bold font-titles">
             Contract & Freelance Software Development
           </h3>
         </section>

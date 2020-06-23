@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ProjectDetails from "./projectDetails";
-import { graphql, useStaticQuery } from "gatsby";
 import ProjectCard from "./projectCard";
 import * as PropTypes from "prop-types";
-
-// Alternative to using GraphQL
-// import projects from "../../content/projects.json";
+import { queryAllProjects } from "../projectsQuery";
 
 function ProjectArticle(props) {
   const cardHeaderStyle = "inline-block p-3 mb-4 mx-4 text-4xl font-titles text-brand-dark";
@@ -31,36 +28,7 @@ function ProjectArticle(props) {
   ) : (
     <div></div>
   );
-
-  const projects = useStaticQuery(graphql`
-    {
-      allContentJson {
-        edges {
-          node {
-            projects {
-              id
-              description
-              longDescription
-              endDate
-              name
-              startDate
-              technologies
-              assets {
-                title
-                description
-                asset
-                hero
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const allProjects = projects.allContentJson.edges
-    .flatMap((edge) => edge.node.projects || [])
-    .filter(Boolean);
+  const allProjects = queryAllProjects();
   const projectComponents = allProjects.map((project) =>
     ProjectCard({ key: project.id, project, onClick: setFocusProject })
   );
