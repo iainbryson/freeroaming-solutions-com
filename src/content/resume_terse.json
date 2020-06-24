@@ -9,7 +9,7 @@
       "countryCode": "US"
     },
     "phone": "+1 (425) 835-3549",
-    "website": "http://freeroamingsolutions.com",
+    "website": "https://freeroamingsolutions.com",
     "profiles": [
       {
         "network": "linkedin",
@@ -36,9 +36,13 @@
     },
     {
       "company": "Freeroaming Solutions",
-      "summary": "Freelance",
+      "summary": "Freelance Software Development",
       "position": "Peripatetic Software Developer",
-      "startDate": "2015-12-01"
+      "startDate": "2015-12-01",
+      "highlights": [
+        "Built e-Learning Platform for Danish Technical University, including course notes editor and renderer and a quiz system.",
+        "Built a research API for accessing public sound data."
+      ]
     },
     {
       "company": "Earth",
@@ -59,7 +63,10 @@
       "position": "Principal SDET",
       "startDate": "2011-09-01",
       "endDate": "2014-04-01"
-    },
+    }
+    ],
+  "additionalWorkLabel": "Prior Experience",
+  "additionalWork": [
     {
       "company": "Microsoft",
       "summary": "Test lead on the Client Sync Engine team in the Windows Live Mesh team.  Led a team responsible for testing the file sync engine, validating performance, stress, and functional correctness for the client components of the distributed client service and peer to peer file synchronization engine.  Shipped as part of Windows Live Essentials in 2010.",
@@ -114,112 +121,22 @@
   ],
   "skills": [
     {
-      "name": "Software Design"
-    },
-    {
       "name": ".NET"
     },
     {
-      "name": "Testing"
-    },
-    {
-      "name": "Test Automation"
-    },
-    {
-      "name": "Distributed Systems"
-    },
-    {
-      "name": "Software Engineering"
-    },
-    {
-      "name": "C++"
-    },
-    {
-      "name": "Visual Studio"
-    },
-    {
-      "name": "C"
-    },
-    {
-      "name": "WinDbg"
-    },
-    {
-      "name": "Software Development"
-    },
-    {
-      "name": "Windows"
+      "name": "C / C++"
     },
     {
       "name": "C#"
     },
     {
-      "name": "Silverlight"
-    },
-    {
-      "name": "Software Quality Assurance"
-    },
-    {
-      "name": "TFS"
-    },
-    {
-      "name": "Scrum"
-    },
-    {
-      "name": "Perl"
-    },
-    {
       "name": "JavaScript"
-    },
-    {
-      "name": "Ubuntu"
-    },
-    {
-      "name": "Performance Testing"
-    },
-    {
-      "name": "Test Planning"
-    },
-    {
-      "name": "Test Design"
-    },
-    {
-      "name": "Test Strategy"
-    },
-    {
-      "name": "Test Management"
-    },
-    {
-      "name": "HTML 5"
-    },
-    {
-      "name": "Powershell"
     },
     {
       "name": "Python"
     },
     {
-      "name": "Management"
-    },
-    {
-      "name": "Agile Methodologies"
-    },
-    {
-      "name": "Windows Azure"
-    },
-    {
-      "name": "Win32 API"
-    },
-    {
-      "name": "People Management"
-    },
-    {
-      "name": "Mac OS X"
-    },
-    {
-      "name": "Linux"
-    },
-    {
-      "name": "OS X"
+      "name": "macOS"
     },
     {
       "name": "CSS"
@@ -228,13 +145,7 @@
       "name": "D3.js"
     },
     {
-      "name": "jQuery"
-    },
-    {
       "name": "Ruby"
-    },
-    {
-      "name": "WordPress"
     },
     {
       "name": "Node.js"
