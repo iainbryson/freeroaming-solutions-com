@@ -170,7 +170,10 @@ function AboutArticle(props) {
                   </div>
                 </div>
               </div>
+            </section>
 
+            <section className="mt-4">
+              <p>If you prefer a resume, you can download it <a className="underline text-blue hover:scale-105" href={'/resume-iain-bryson-07-09-20.doc'} download>here</a>.</p>
             </section>
           </div>
         </section>

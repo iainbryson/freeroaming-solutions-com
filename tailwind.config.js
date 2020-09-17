@@ -42,6 +42,8 @@ module.exports = {
         "danger-light": "#ffd0d7",
         danger: "#e92268",
         "danger-dark": "#6f1f35",
+
+        blue: '#007ace',
       },
     },
   },

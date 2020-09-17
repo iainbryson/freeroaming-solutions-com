@@ -30,14 +30,19 @@
   "work": [
     {
       "company": "Grafiti, Inc.",
-      "summary": "Building the world's first search engine for graphs & charts from trusted publishers & data sources. We're building a facts machine to serve charts, graphs & visual insights into your favorite tools.",
+      "summary": "Built the world's first search engine for graphs & charts from trusted publishers & data sources.",
+      "highlights": [
+        "Architected the product, backend, frontend, deployment and CI/CD pipeline.",
+        "Led a team of 2 developers and together we created a responsive, fast chart search engine serving a database of 600k (and growing) charts and infographics to 1000s of users a month."
+      ],
       "position": "CTO",
-      "startDate": "2016-06-01"
+      "startDate": "2016-06-01",
+      "endDate": "2020-06-30"
     },
     {
       "company": "Freeroaming Solutions",
       "summary": "Freelance Software Development",
-      "position": "Peripatetic Software Developer",
+      "position": "Freelance Software Developer",
       "startDate": "2015-12-01",
       "highlights": [
         "Built e-Learning Platform for Danish Technical University, including course notes editor and renderer and a quiz system.",
@@ -46,23 +51,21 @@
     },
     {
       "company": "Earth",
-      "summary": "Currently on a gap year, traveling and reinventing myself as a digital nomad.",
+      "summary": "Gap year, traveling and reinventing myself as a digital nomad.",
       "position": "International Vagabond",
-      "startDate": "2014-11-01"
+      "startDate": "2014-11-01",
+      "endDate": "2015-11-01"
     },
     {
       "company": "Microsoft",
-      "summary": "Founding member of the Reach, Engagement & Delight team for OneDrive.  This unique team is tasked with data analytics for all major business decisions with a focus on driving engagement & reliability for all of OneDrive \n\nScope ranged from implementing telemetry in all areas of the product chain, from backend services through to clients on all platforms, writing analysis scripts, developing statistical models, creating visualizations & presentations for audiences ranging from senior management to the entire team of ~300 engineers.",
-      "position": "Principal Quality Engineer",
-      "startDate": "2014-04-01",
-      "endDate": "2014-09-01"
-    },
-    {
-      "company": "Microsoft",
-      "summary": "Principal test engineer working on file sync engine, product telemetry & visualization in the Devices and Roaming Experience team.",
+      "summary": "Principal SDET on OneDrive: file syncing for millions of customers across multiple platforms.",
+      "highlights": [
+        "Implemented telemetry in all areas of the product chain, from backend services through to clients on all platforms.",
+        "Write analysis scripts, developed statistical models, creating visualizations & presentations for audiences ranging from senior management to the entire team of ~300 engineers to drive stability and performance."
+      ],
       "position": "Principal SDET",
       "startDate": "2011-09-01",
-      "endDate": "2014-04-01"
+      "endDate": "2014-09-01"
     }
     ],
   "additionalWorkLabel": "Prior Experience",
@@ -76,38 +79,21 @@
     },
     {
       "company": "Microsoft",
-      "summary": "Test Manager for the ISV&NT product team, makers of Visual C++.  Was the Test Manager for the initial phases of Visual C++ 2010.",
+      "summary": "SDET, Lead & Manager for Visual C++",
+      "highlights": [
+        "Held various management positions, including lead and manager-of-managers",
+        "Led testing during the 64-bit transitions of VC++: IA64 and x64; delivered solid compilers to Windows & millions of external customers."
+      ],
       "position": "Test Manager",
-      "startDate": "2007-12-01",
-      "endDate": "2008-12-01"
-    },
-    {
-      "company": "Microsoft",
-      "summary": "Test Manager for the Phoenix product unit.  Our product unit delivers the optimizing backends for the Visual C++ compiler, along with associated tools.  In addition, we deliver the Phoenix program analysis and transformation platform.",
-      "position": "Test Manager",
-      "startDate": "2004-10-01",
-      "endDate": "2007-12-01"
-    },
-    {
-      "company": "Microsoft",
-      "summary": "Test lead for the x64 (a.k.a. AMD64) code generator and tools during the initial port of the Windows and .NET platforms.  Worked closely with internal partners (particularly Windows) as well as external ones (particularly AMD).",
-      "position": "Test Lead",
-      "startDate": "2001-05-01",
-      "endDate": "2004-10-01"
-    },
-    {
-      "company": "Microsoft",
-      "summary": "SDE/T on the C runtime library, focusing on the IA64 platform.",
-      "position": "Software Design Engineer in Test",
       "startDate": "2000-02-01",
-      "endDate": "2001-05-01"
+      "endDate": "2008-12-01"
     }
   ],
   "education": [
     {
       "institution": "University of Western Ontario",
       "area": "Robotics, Software",
-      "studyType": "M. Eng. Sci.",
+      "studyType": "Masters Eng. Sci.",
       "startDate": "1998-01-01",
       "endDate": "2000-01-01"
     },
@@ -121,13 +107,7 @@
   ],
   "skills": [
     {
-      "name": ".NET"
-    },
-    {
-      "name": "C / C++"
-    },
-    {
-      "name": "C#"
+      "name": "Ruby"
     },
     {
       "name": "JavaScript"
@@ -136,19 +116,19 @@
       "name": "Python"
     },
     {
-      "name": "macOS"
+      "name": "C / C++"
     },
     {
-      "name": "CSS"
+      "name": "TypeScript"
     },
     {
       "name": "D3.js"
     },
     {
-      "name": "Ruby"
+      "name": "Node.js"
     },
     {
-      "name": "Node.js"
+      "name": "C#"
     }
   ],
   "languages": [
